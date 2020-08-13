@@ -67,9 +67,22 @@ main {
 	padding-top: 25px;
 }
 
+main,
+footer {
+	background: #ffffe6;
+}
+
 fieldset {
 	border: none;
 	text-align: left;
+}
+
+.msg {
+	display: block;
+}
+
+textarea {
+	margin-top: 25px;
 }
 
 input[type="text"],
@@ -83,13 +96,22 @@ select {
 	font-size: 1.2em;
 }
 
+input:focus,
+textarea:focus {
+	border: 2px solid teal;
+}
+
 #zip {
 	width: 33%;
 }
 
+.flex {
+	display: flex;
+	flex-direction: column;
+}
+
 .text-label {
 	font-size: 1.2em;
-	display: block;
 	padding: 10px 0 10px 0;
 }
 
@@ -106,6 +128,12 @@ textarea {
 	text-align: right;
 	padding-right: 25px;
 	font-size: .75em;
+}
+
+input[type="tel"]::placeholder {
+	text-align: left;
+	font-size: 1em;
+	padding-left: 25px;
 }
 
 option:nth-of-type(1),
@@ -146,8 +174,7 @@ button {
 }
 
 footer {
-	padding-bottom: 25px;
-	margin-top: 25px;
+	padding: 50px 0 50px 0;
 	color: lightslategrey;
 	font-style: italic;
 	font-size: 1.2em;
@@ -157,6 +184,15 @@ footer {
 
 @media (min-width: 768px) {
 
+	form {
+		width: 75%;
+		margin: 0 auto;
+	}
+
+	legend {
+		margin-bottom: 35px;
+	}
+
 	input[type="text"],
 	input[type="email"],
 	input[type="tel"],
@@ -164,13 +200,16 @@ footer {
 		width: 75%;
 	}
 
-	.text-label {
-		display: initial;
-
+	.flex {
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: 25px;
 	}
 
-
-
+	#zip {
+		width: 25%;
+		margin-right: 50%;
+	}
 
 }
 

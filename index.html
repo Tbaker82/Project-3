@@ -18,22 +18,32 @@
 			<form action="index.html" method="post">
 					<fieldset class="contact-info">
 						<legend>Contact Information</legend>
-						<div>
+						<div class="flex">
 							<label for="name" class="text-label">Full Name</label>
-							<input type="text" id="name" name="user-name" placeholder="Required" class="required">
-							
+							<input type="text" id="name" name="user-name" placeholder="Required" class="required" required>
+						</div>
+
+						<div class="flex">	
 							<label for="email" class="text-label">Email Address</label>
-							<input type="email" id="email" name="user-email" placeholder="Required" class="required">
-							
+							<input type="email" id="email" name="user-email" placeholder="Required" class="required" required>
+						</div>	
+
+						<div class="flex">
 							<label for="phone" class="text-label">Phone Number</label>
-							<input type="tel" id="phone" name="user-phone">
-						
+							<input type="tel" id="phone" name="user-phone" placeholder="(###)###-####">
+						</div>
+
+						<div class="flex">
 							<label for="address" class="text-label">Street Address</label>
 							<input type="text" id="address" name="user-address">
-						
+						</div>
+
+						<div class="flex">
 							<label for="city" class="text-label">City</label>
 							<input type="text" id="city" name="user-city">
+						</div>
 
+						<div class="flex">
 							<label for="state" class="text-label">State</label>
 							<select id="state" name="user-state" >
 								<option class="choose" value="" disabled selected hidden>Choose State</option>
@@ -88,10 +98,13 @@
 								<option value="WI">Wisconsin</option>
 								<option value="WY">Wyoming</option> 
 							</select>
-		
+						</div>
+
+						<div class="flex">
 							<label for="zip" class="text-label">Zip Code</label>
 							<input type="text" id="zip" name="user-zip">
 						</div>
+
 					</fieldset>
 					<fieldset class="newsletter">
 						<legend>Newsletter</legend>
@@ -115,9 +128,11 @@
 							<input type="radio" id="plain" value="plain" name="format">
 							<label for="plain">Plain Text</label>
 
+						<div class="msg">
 							<label for="msg" class="text-label">Other topics you'd like to hear about</label>
 							<textarea id="msg" name="user-msg"></textarea>
-						
+						</div>
+
 							<button type="submit" value="Submit">Sign Up</button>
 						
 					</fieldset>

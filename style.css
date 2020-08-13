@@ -1,0 +1,177 @@
+/* Mobile Layout */
+
+* {
+	box-sizing: border-box;
+	margin-top: 0;
+}
+
+body {
+	text-align: center;
+	width: 100%;
+	margin: 0;
+}
+
+header {
+	border-bottom: solid 5px black;
+	padding-bottom: 25px;
+}
+
+h1 {
+	background: #132639;
+	color: white;
+	text-transform: uppercase;
+	padding: 30px;
+	font-size: 2em;
+	}
+
+h1,
+h2,
+legend {
+	font-weight: bolder;
+}
+
+h2,
+legend {
+	color: black;
+	font-size: 1.75em;
+}
+
+p {
+	font-size: 1.35em;
+}
+
+p,
+label {
+	color: lightslategrey;
+}
+
+label,
+h1,
+h2,
+legend {
+	font-family: Merriweather, serif;
+}
+
+select {
+	padding-left: 15px;
+}
+
+select,
+.required {
+	font-size: 1.25em;
+}
+
+main {
+	border-top: solid 3px black;
+	margin-top: 5px;
+	padding-top: 25px;
+}
+
+fieldset {
+	border: none;
+	text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+	border: solid 1px black;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 1.2em;
+}
+
+#zip {
+	width: 33%;
+}
+
+.text-label {
+	font-size: 1.2em;
+	display: block;
+	padding: 10px 0 10px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+	height: 50px;
+	background: #f2f2f2;
+}
+
+::placeholder {
+	text-align: right;
+	padding-right: 25px;
+	font-size: .75em;
+}
+
+option:nth-of-type(1),
+::placeholder {
+	color: lightgrey;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	margin: 15px 10px 0 0;
+}
+
+#java,
+#plain {
+	margin-bottom: 25px;
+}
+
+
+
+textarea {
+	height: 100px;
+}
+
+button {
+	width: 100%;
+	height: 75px;
+	margin-top: 25px;
+	background: teal;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.5em;
+}
+
+p,
+button {
+	font-family: Roboto, sans-serif;
+}
+
+footer {
+	padding-bottom: 25px;
+	margin-top: 25px;
+	color: lightslategrey;
+	font-style: italic;
+	font-size: 1.2em;
+}
+
+/* Larger Screen Layout */
+
+@media (min-width: 768px) {
+
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	select {
+		width: 75%;
+	}
+
+	.text-label {
+		display: initial;
+
+	}
+
+
+
+
+}
+
+

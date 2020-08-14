@@ -101,6 +101,18 @@ textarea:focus {
 	border: 2px solid teal;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+	transition: width 1s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+	width: 50%;
+}
+
 #zip {
 	width: 33%;
 }
